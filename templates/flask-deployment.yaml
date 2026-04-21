@@ -12,6 +12,7 @@ spec:
       labels:
         app: flask
     spec:
+      serviceAccountName: flask-sa
       containers:
         - name: flask
           image: {{ .Values.flask.image }}:{{ .Values.flask.tag }}
