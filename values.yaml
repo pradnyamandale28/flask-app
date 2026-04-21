@@ -1,0 +1,12 @@
+flask:
+  image: prad28/flask-app
+  tag: v1
+  port: 8000
+  replicas: 1
+
+redis:
+  image: redislabs/redismod
+  tag: latest
+  port: 6379
+
+env: dev
